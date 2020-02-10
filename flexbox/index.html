@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Flexbox</title>
+        <meta name="description" content="Flexbox">
+        <meta name="keywords" content="Flexbox">
+        <!-- Favicon -->
+        <link rel="icon" href="img/favicon_and_og_image/favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="img/favicon_and_og_image/favicon.png" type="image/x-icon"> 
+        <!--  OG теги -->
+        <meta property="og:title" content="Flexbox">
+        <meta property="og:description" content="Flexbox">
+        <meta property="og:type" content="article">
+        <meta property="og:image" content="img/favicon_and_og_image/og_image.png">
+        <meta property="og:site_name" content="CSS">
+        <!-- CSS and fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!-- ------------Header start------------- -->
+        <header class="header">
+            <div class="container">
+                <div class="head-box d-flex">
+                    <div class="logo d-flex">
+                        <div class="logo__left d-flex">
+                            <i class="logo__icon fas fa-plug"></i>
+                        </div>
+                        <div class="logo__right d-flex">
+                            <p class="logo__up">
+                                Моя школа
+                            </p>
+                            <p class="logo__down">
+                                верстки
+                            </p>
+                        </div>
+                    </div>
+                    <nav class="head-box__nav ">
+                        <ul class="head-box__menu d-flex">
+                            <li class="head-box__item">
+                                <a href="#" class="head-box__link">
+                                    Знаете ли вы  
+                                </a>  
+                            </li>
+                            <li class="head-box__item">
+                                <a href="#" class="head-box__link">
+                                    Зачем
+                                </a>
+                            </li>
+                            <li class="head-box__item">
+                                <a href="#" class="head-box__link">
+                                    Кому 
+                                </a>
+                            </li>
+                            <li class="head-box__item">
+                                <a href="#" class="head-box__link">
+                                    Регистрация
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="tel:+749556756412" class="phone__number">
+                        <i class="phone__icon fas fa-phone"></i> +7 (495) 567-564-12
+                    </a>
+                </div> 
+            </div>
+        </header>
+        <!-- ------------Header end------------- -->
+
+        <!-- ------------Offer start------------- -->
+        <section class="offer">
+            <div class="container">
+                <div class="offer-box d-flex">
+                    <div class="offer-box__left d-flex"> 
+                        <p class="offer-box__icon-text">
+                            <i class="offer-box__icon fas fa-graduation-cap"></i> Онлайн-мастер-класс
+                        </p>
+                        <h1 class="offer-box__header">
+                            Я — профессиональный веб-верстальщик
+                        </h1>
+                        <p class="offer-box__black">
+                            9 апреля в 18:00   
+                        </p>
+                    </div>
+                    <form action="#" class="form d-flex">
+                        <h3 class="form__header">
+                            Забронировать участие
+                        </h3>
+                        <p class="form__header-text">
+                            Чтобы стать профессионалом в  HTML и CSS, а также делать WOW
+                        </p>
+                        <input type="text" required name="text" placeholder="Введите имя" class="form__input">
+                        <input type="email" required name="email" placeholder="Введите E-mail" class="form__input">
+                        <input type="tel" required name="tel" placeholder="Введите телефон" class="form__input">
+                        <button type="submit" class="form__button">
+                            Оставить заявку
+                        </button>
+                        <p class="form__text">
+                            Ваши данные под защитой
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- ------------Offer end------------- -->
+
+        <!-- ------------Stats start------------- -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats-box d-flex">
+                    <div class="stats-box__up d-flex">
+                        <!-- Тут мне нужна была еще обертка для perspective -->
+                        <div class="stats-box__js-purple">
+                            <div class="stats-box__purple d-flex">
+                                <h3 class="stats-box__purple-header">
+                                    Ваше Имя
+                                </h3>
+                                <p class="stats-box__purple-text">
+                                    Ведущий мастер-класса
+                                </p>
+                                <p class="stats-box__purple-text">
+                                    Веб-верстальщик и фрилансер
+                                </p>
+                                <div class="stats-box__purple-con d-flex">
+                                    <div class="stats-box__hundred d-flex">
+                                        <span class="stats-box__hundred-number">
+                                            100+
+                                        </span>
+                                        <p class="stats-box__hundred-text">
+                                            Созданных сайтов
+                                        </p>     
+                                    </div>
+                                    <div class="stats-box__eight d-flex">
+                                        <span class="stats-box__eight-number">
+                                            8
+                                        </span>
+                                        <p class="stats-box__eight-text">
+                                            Лет опыта
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="#" class="stats-box__purple-link">
+                                    Узнать больше
+                                </a>
+                            </div>
+                        </div>
+                        <div class="stats-box__youknow d-flex">
+                            <h2 class="stats-box__youknow-header">
+                                Знаете ли вы?
+                            </h2>
+                            <p class="stats-box__youknow-text">
+                                По статистике, среднестатистический фрилансер зарабатывает около <span class="bold">30 тысяч рублей</span> в месяц. Чаще всего, гораздо меньше этой цифры.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stats-box__down d-flex">
+                        <div class="stats-box__hm d-flex">
+                            <h2 class="stats-box__hm-header">
+                                Хм...
+                            </h2>
+                            <p class="stats-box__hm-text">
+                                Почему же так мало? Чего не хватает фрилансерам, чтобы “пробить потолок” хотя бы...
+                            </p>
+                        </div>
+                        <div class="stats-box__js-yellow">
+                            <div class="stats-box__yellow d-flex">
+                                <h3 class="stats-box__yellow-header">
+                                    $1000
+                                </h3>
+                                <p class="stats-box__yellow-text">
+                                    в месяц?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ------------Stats end------------- -->
+
+        <!-- ------------Show start------------- -->
+        <section class="show">
+            <div class="container">
+                <div class="show-box d-flex">
+                    <h2 class="show-box__header">
+                        Я покажу, <br>как мне удается...
+                    </h2>
+                    <div class="show-box__items d-flex">
+                        <div class="show-box__item d-flex">
+                            <span class="show-box__left">
+                                1
+                            </span>
+                            <div class="show-box__right d-flex">
+                                <h3 class="show-box__item-header">
+                                    Зарабатывать тысячи долларов
+                                </h3>
+                                <p class="show-box__item-text">
+                                    Исключительно с помощью веб-верстки и навыков разработки сайтов
+                                </p>
+                            </div>
+                        </div>
+                        <div class="show-box__item d-flex m-left">
+                            <span class="show-box__left">
+                                2
+                            </span>
+                            <div class="show-box__right d-flex">
+                                <h3 class="show-box__item-header">
+                                    Работать <br>в путешествиях
+                                </h3>
+                                <p class="show-box__item-text">
+                                    Без возврата домой, используя ноутбук и все возможности фриланса
+                                </p>
+                            </div>
+                        </div>
+                        <div class="show-box__item d-flex">
+                            <span class="show-box__left">
+                                3
+                            </span>
+                            <div class="show-box__right d-flex">
+                                <h3 class="show-box__item-header">
+                                    Быть на шаг впереди конкурентов
+                                </h3>
+                                <p class="show-box__item-text">
+                                    Используя проверенные стратегии развития, общения и работы с клиентами
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ------------Show end------------- -->
+
+        <!-- ------------If start------------- -->
+        <section class="if">
+            <div class="container">
+                <div class="if-box d-flex">
+                    <h2 class="if-box__header">
+                        Если вы
+                    </h2>
+                    <div class="if-box__cards d-flex">
+                        <div class="if-box__card d-flex if-box__card_green">
+                            <i class="if-box__icon fas fa-flag"></i>
+                            <h3 class="if-box__text">
+                                Начинающий <br>веб-верстальщик
+                            </h3>
+                        </div>
+                        <div class="if-box__card d-flex if-box__card_blue">
+                            <i class="if-box__icon fas fa-money-bill-alt"></i>
+                            <h3 class="if-box__text">
+                                Не довольны доходами на фрилансе
+                            </h3>
+                        </div>
+                        <div class="if-box__card d-flex if-box__card_pink">
+                            <i class="if-box__icon fas fa-meh"></i>
+                            <h3 class="if-box__text">
+                                На фрилансе &gt;2 лет, но ваш доход &lt; $1000
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ------------If end------------- -->
+
+        <!-- ------------Booking start------------- -->
+        <section class="booking">
+            <div class="container">
+                <div class="book-box d-flex">
+                    <div class="book-box__left d-flex">
+                        <div class="book-box__online d-flex">
+                            <i class="book-box__icon fas fa-graduation-cap"></i> 
+                            <p class="book-box__text">
+                                Онлайн-мастер-класс
+                            </p>
+                        </div>
+                        <h2 class="book-box__header">
+                            Не потеряйте уникальную возможность. Бронируйте участие уже сегодня!
+                        </h2>
+                        <div class="book-box__time d-flex">
+                            <p class="book-box__text book-box__text_left">
+                                <i class="book-box__icon fas fa-clock"></i> 9 апреля в 18:00
+                            </p>  
+                            <p class="book-box__text">
+                                <i class="book-box__icon fas fa-users"></i> Всего 40 мест
+                            </p>
+                        </div>
+                    </div>
+                    <form action="#" class="form form_right d-flex">
+                        <h3 class="form__header">
+                            Забронировать участие
+                        </h3>
+                        <p class="form__header-text">
+                            Чтобы стать профессионалом в  HTML и CSS, а также делать WOW
+                        </p>
+                        <input type="text" required name="text" placeholder="Введите имя" class="form__input">
+                        <input type="email" required name="email" placeholder="Введите E-mail" class="form__input">
+                        <input type="tel" required name="tel" placeholder="Введите телефон" class="form__input">
+                        <button type="submit" class="form__button">
+                            Оставить заявку
+                        </button>
+                        <p class="form__text">
+                            Ваши данные под защитой
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- ------------Booking end------------- -->
+
+        <!-- ------------Footer------------- -->
+        <footer class="footer">
+            <div class="container">
+                <div class="foot-box d-flex">
+                    <div class="logo d-flex">
+                        <div class="logo__left d-flex">
+                            <i class="logo__icon fas fa-plug"></i>
+                        </div>
+                        <div class="logo__right d-flex">
+                            <p class="logo__up">
+                                Моя школа
+                            </p>
+                            <p class="logo__down">
+                                верстки
+                            </p>
+                        </div>
+                    </div>
+                    <p class="foot-box__text">
+                        Все права защищены
+                    </p>
+                    <div class="phone">
+                        <i class="phone__icon fas fa-phone"></i>
+                        <a href="tel:+749556756412" class="phone__number">
+                            +7 (495) 567-564-12
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>
